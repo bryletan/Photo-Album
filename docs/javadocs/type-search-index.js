@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"view","l":"AdminState"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"view","l":"CaptionEditSubstate"},{"p":"view","l":"LoginState"},{"p":"view","l":"NonAdminState"},{"p":"view","l":"PhotoState"},{"p":"view","l":"PhotoViewState"},{"p":"view","l":"SlideShowState"}]

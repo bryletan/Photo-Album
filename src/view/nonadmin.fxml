@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NonAdminController">
+   <children>
+      <ListView fx:id="albumListView" layoutX="26.0" layoutY="101.0" prefHeight="642.0" prefWidth="400.0" />
+      <Text layoutX="576.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Information">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Label fx:id="albumName" alignment="CENTER" layoutX="580.0" layoutY="144.0" prefHeight="27.0" prefWidth="301.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="albumSize" alignment="CENTER" layoutX="580.0" layoutY="174.0" prefHeight="27.0" prefWidth="301.0" text="Size">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="albumDate" alignment="CENTER" layoutX="580.0" layoutY="204.0" prefHeight="27.0" prefWidth="301.0" text="Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="625.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album name">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newAlbumName" layoutX="548.0" layoutY="360.0" prefHeight="35.0" prefWidth="356.0" />
+      <Text layoutX="583.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search for images" wrappingWidth="293.15234375">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="510.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="511.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="721.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="searchCBox" layoutX="710.0" layoutY="627.0" prefHeight="26.0" prefWidth="59.0" />
+      <TextField fx:id="searchFirstTag" layoutX="562.0" layoutY="627.0" prefHeight="25.0" prefWidth="147.0" />
+      <TextField fx:id="searchSecondTag" layoutX="770.0" layoutY="627.0" prefHeight="25.0" prefWidth="147.0" />
+      <TextField fx:id="startYearsField" layoutX="665.0" layoutY="564.0" prefHeight="25.0" prefWidth="45.0" />
+      <TextField fx:id="endYearsField" layoutX="842.0" layoutY="564.0" prefHeight="25.0" prefWidth="45.0" />
+      <Button fx:id="createButton" layoutX="656.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleEvent" text="Create" />
+      <Button fx:id="searchButton" layoutX="689.0" layoutY="677.0" mnemonicParsing="false" onAction="#handleEvent" prefHeight="25.0" prefWidth="75.0" text="Search" />
+      <Button fx:id="logoutButton" layoutX="920.0" layoutY="753.0" mnemonicParsing="false" onAction="#handleEvent" text="Logout" />
+      <Button fx:id="deleteButton" layoutX="308.0" layoutY="754.0" mnemonicParsing="false" onAction="#handleEvent" text="Delete" />
+      <Button fx:id="openButton" layoutX="94.0" layoutY="753.0" mnemonicParsing="false" onAction="#handleEvent" text="Open" />
+      <Button fx:id="renameButton" layoutX="741.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleEvent" text="Rename" />
+      <Label fx:id="albumsText" alignment="CENTER" layoutX="26.0" layoutY="31.0" prefHeight="57.0" prefWidth="400.0" text="Albums" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="startMonthsCBox" layoutX="575.0" layoutY="564.0" prefHeight="25.0" prefWidth="45.0" />
+      <ChoiceBox fx:id="endMonthsCBox" layoutX="752.0" layoutY="564.0" prefHeight="25.0" prefWidth="45.0" />
+      <Text layoutX="677.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+      <Text layoutX="853.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+      <Text layoutX="602.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(type=value)" />
+      <Text layoutX="811.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(type=value)" />
+      <TextField fx:id="startDayField" layoutX="620.0" layoutY="564.0" prefHeight="25.0" prefWidth="45.0" />
+      <TextField fx:id="endDayField" layoutX="797.0" layoutY="564.0" prefHeight="25.0" prefWidth="45.0" />
+      <Text layoutX="632.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day" />
+      <Text layoutX="809.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day" />
+   </children>
+</AnchorPane>
