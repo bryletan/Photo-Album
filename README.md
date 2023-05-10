@@ -1,7 +1,7 @@
 # Photo Album
 An application with a graphical user interface to sort photos into various albums. 
 
-#Functionality
+# Functionality
 * View photos
 * Create, edit, & delete albums
 * Tag photos with various keys, e.g. Location, Person
